@@ -1,1 +1,56 @@
-我自己的网页
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script type="text/javascript">
+
+                //定义全局变量，用于标识
+        
+                var flag = 0;
+        
+                window.onload = function () {
+        
+                    //定时器
+        
+                    setInterval("titleChange()", 1000);
+        
+                }
+        
+                //定义函数
+        
+                function titleChange() {
+        
+                    if(flag==0)
+        
+                    {
+        
+                        document.title = "★☆★绿叶学习网★☆★";
+        
+                        flag = 1;
+        
+                    }
+        
+                    else
+        
+                    {
+        
+                        document.title = "☆★☆绿叶学习网☆★☆";
+        
+                        flag = 0;
+        
+                    }
+        
+                }
+        
+            </script>
+      
+
+</head>
+<body>
+  
+
+
+</body> 
+</html>
